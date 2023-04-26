@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 :root {
   --primary-color: #131921;
   --secondary-color: #e67a01;
@@ -10,28 +11,34 @@
   --fourth-color: #c9c9c9;
   --text-color: white;
 }
+
 header {
   min-height: 10vh;
   background: var(--primary-color);
   display: flex;
   align-items: center;
 }
+
 .header {
   width: 80%;
   margin: auto;
 }
+
 header img {
   height: 3rem;
 }
+
 .container {
   display: grid;
   grid-template-columns: 20% auto;
 }
+
 aside {
   min-height: 90vh;
   background: var(--fourth-color);
   grid-row-start: span 2;
 }
+
 nav {
   display: flex;
   flex-direction: column;
@@ -40,6 +47,7 @@ nav {
   list-style: none;
   color: var(--primary-color);
 }
+
 nav li {
   width: 100%;
   border-bottom: 1px solid var(--primary-color);
@@ -47,6 +55,7 @@ nav li {
   padding: 1rem;
   cursor: pointer;
 }
+
 nav li:hover {
   background: var(--secondary-color);
   color: var(--text-color);
@@ -81,6 +90,7 @@ main {
   min-height: 80vh;
   background: var(--tertiary-color);
 }
+
 footer {
   min-height: 10vh;
   background: var(--primary-color);
