@@ -3,7 +3,6 @@
   padding: 0;
   box-sizing: border-box;
 }
-
 :root {
   --primary-color: #131921;
   --secondary-color: #e67a01;
@@ -11,34 +10,28 @@
   --fourth-color: #c9c9c9;
   --text-color: white;
 }
-
 header {
   min-height: 10vh;
   background: var(--primary-color);
   display: flex;
   align-items: center;
 }
-
 .header {
   width: 80%;
   margin: auto;
 }
-
 header img {
   height: 3rem;
 }
-
 .container {
   display: grid;
   grid-template-columns: 20% auto;
 }
-
 aside {
   min-height: 90vh;
   background: var(--fourth-color);
   grid-row-start: span 2;
 }
-
 nav {
   display: flex;
   flex-direction: column;
@@ -47,7 +40,6 @@ nav {
   list-style: none;
   color: var(--primary-color);
 }
-
 nav li {
   width: 100%;
   border-bottom: 1px solid var(--primary-color);
@@ -55,18 +47,40 @@ nav li {
   padding: 1rem;
   cursor: pointer;
 }
-
 nav li:hover {
   background: var(--secondary-color);
   color: var(--text-color);
   transition: all;
 }
 
+.drop-down-menu {
+  position: relative;
+}
+
+.drop-down-menu ul {
+  width: 10rem;
+  position: absolute;
+  top: 0;
+  right: -10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  list-style: none;
+  color: var(--primary-color);
+  background-color: var(--fourth-color);
+  border: 1px solid var(--primary-color);
+  display: none;
+}
+
+.drop-down-menu:hover ul {
+  display: block;
+}
+
 main {
   min-height: 80vh;
   background: var(--tertiary-color);
 }
-
 footer {
   min-height: 10vh;
   background: var(--primary-color);
