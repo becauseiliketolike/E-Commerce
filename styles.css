@@ -54,7 +54,7 @@ nav li {
   width: 100%;
   border: 1px solid var(--primary-color);
   margin: 0.5rem 0rem;
-  border-radius: 30px 30px 30px 30px;
+  border-radius: 30px;
   text-align: center;
   padding: 1rem;
   cursor: pointer;
