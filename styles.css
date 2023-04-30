@@ -5,11 +5,13 @@
 }
 
 :root {
-  --primary-color: #131921;
-  --secondary-color: #e67a01;
+  --primary-color: #3f3c3c;
+  --secondary-color: #847c79;
   --tertiary-color: #e3e6e6;
   --fourth-color: #c9c9c9;
   --text-color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
 }
 
 header {
@@ -26,7 +28,7 @@ header {
 }
 
 header img {
-  height: 3rem;
+  height: 4rem;
 }
 
 .container {
