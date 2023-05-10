@@ -31,6 +31,12 @@ header img {
   height: 4rem;
 }
 
+.header img {
+  animation-name: move-logo-animation;
+  animation-duration: 5s;
+  transition: all;
+}
+
 .container {
   display: grid;
   grid-template-columns: 20% auto;
@@ -107,4 +113,16 @@ main {
 footer {
   min-height: 10vh;
   background: var(--primary-color);
+}
+
+@keyframes move-logo-animation {
+  0% {
+    transform: translateX(0rem);
+  }
+  50% {
+    transform: translateX(80rem);
+  }
+  100% {
+    transform: translateX(0rem);
+  }
 }
