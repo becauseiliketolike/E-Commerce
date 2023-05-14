@@ -17,58 +17,24 @@
 header {
   min-height: 10vh;
   background: var(--primary-color);
-  border-radius: 0px 50px 0px 0px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 0rem 10rem;
+  border-radius: 0px 50px 0px 0px;
+}
+
+.header {
+  width: 80%;
+  margin: auto;
 }
 
 header img {
   height: 4rem;
-  flex: 1;
 }
 
 .header img {
   animation-name: move-logo-animation;
   animation-duration: 5s;
   transition: all;
-}
-
-.search-box {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
-
-.search-box input {
-  padding-left: 3rem;
-  height: 3rem;
-  width: 20rem;
-  border: none;
-  background-color: var(--tertiary-color);
-  display: none;
-}
-
-.search-box input.active {
-  display: block;
-}
-
-.search-icon {
-  width: 3rem;
-  height: 3rem;
-}
-
-.search-icon img {
-  background-color: var(--tertiary-color);
-  width: 3rem;
-  height: 3rem;
-  padding: 1rem;
-  cursor: pointer;
-}
-
-.search-icon img:hover {
-  background-color: var(--fourth-color);
 }
 
 .container {
