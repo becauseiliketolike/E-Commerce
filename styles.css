@@ -52,6 +52,8 @@ header img {
 
 .search-box input.active {
   display: block;
+  animation-name: scale-in-animation;
+  animation-duration: 0.5s;
 }
 
 .search-icon {
@@ -158,5 +160,18 @@ footer {
   }
   100% {
     transform: translateX(0rem);
+  }
+}
+
+@keyframes scale-in-animation {
+  0% {
+    transform: scale(0);
+    transform-origin: 100% 50%;
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    transform-origin: 100% 50%;
+    opacity: 1;
   }
 }
