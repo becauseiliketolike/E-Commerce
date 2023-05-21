@@ -35,6 +35,24 @@ header img {
   transition: all;
 }
 
+.search-bar-icons {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+
+.fa-brands {
+  color: var(--tertiary-color);
+  cursor: pointer;
+  width: 4rem;
+  margin-bottom: 0.5rem;
+}
+
+.fa-brands:hover {
+  color: #7f706b;
+}
+
 .search-box {
   display: flex;
   align-items: center;
