@@ -43,26 +43,32 @@ header img {
 }
 
 .fa-brands {
+  width: 4rem;
   color: var(--tertiary-color);
   cursor: pointer;
-  width: 4rem;
-  margin-bottom: 0.5rem;
+  margin: 0.5rem 0rem;
+  text-align: center;
 }
 
 .fa-brands:hover {
   color: #7f706b;
 }
 
+.icons {
+  border-bottom: 0.2rem solid white;
+}
+
 .search-box {
   display: flex;
-  align-items: center;
-  justify-content: space-around;
+  justify-content: flex-end;
+  margin: 0.5rem 0rem;
+  width: 100%;
 }
 
 .search-box input {
   padding-left: 3rem;
   height: 3rem;
-  width: 20rem;
+  width: 100%;
   border: none;
   background-color: var(--tertiary-color);
   display: none;
