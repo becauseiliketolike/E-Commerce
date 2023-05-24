@@ -168,6 +168,17 @@ nav li:hover {
 main {
   min-height: 80vh;
   background: var(--tertiary-color);
+  width: auto;
+}
+
+.car-slider {
+  width: 100%;
+  display: flex;
+}
+
+.car-slider img {
+  object-fit: cover;
+  width: 100%;
 }
 
 footer {
