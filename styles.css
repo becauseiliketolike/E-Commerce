@@ -169,17 +169,24 @@ main {
   min-height: 80vh;
   background: var(--tertiary-color);
   width: auto;
+  display: flex;
+  justify-content: center;
 }
 
 .car-slider {
-  width: 100%;
-  display: flex;
+  width: 50%;
+  height: 50%;
+  margin-top: 1rem;
   position: relative;
+  border: 0.3rem solid var(--secondary-color);
+  border-radius: 1rem;
+  overflow: hidden;
 }
 
 .car-slider img {
-  object-fit: cover;
   width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .fa-solid {
@@ -187,6 +194,10 @@ main {
   position: absolute;
   cursor: pointer;
   font-size: 1.5rem;
+}
+
+.fa-solid:hover {
+  color: var(--text-color);
 }
 
 .fa-arrow-left {
