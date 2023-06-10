@@ -166,6 +166,50 @@ nav li:hover {
   display: block;
 }
 
+.read-more-less {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  color: var(--primary-color);
+  max-width: 25ch;
+  text-align: justify;
+}
+
+.read-more-less h3 {
+  margin-bottom: 1rem;
+  animation: hot-deal-animation 1s steps(5, start) infinite;
+}
+
+.read-more-less p span {
+  display: none;
+}
+
+.read-more-less p span.active {
+  display: inline;
+}
+
+.read-more-less p i {
+  display: inline;
+}
+
+.read-more-less p i.active {
+  display: none;
+}
+
+.read-more-less button {
+  color: var(--primary-color);
+  border: none;
+  padding: 0.8rem;
+  cursor: pointer;
+  margin-top: 0.5rem;
+}
+
+.read-more-less button:hover {
+  color: var(--secondary-color);
+}
+
 main {
   min-height: 80vh;
   background: var(--tertiary-color);
@@ -244,5 +288,12 @@ footer {
     transform: scale(1);
     transform-origin: 100% 50%;
     opacity: 1;
+  }
+}
+
+@keyframes hot-deal-animation {
+  to {
+    visibility: hidden;
+    color: red;
   }
 }

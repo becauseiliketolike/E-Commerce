@@ -1,11 +1,22 @@
 const searchBoxIcon = document.querySelector(".search-icon");
 const searchBoxInput = document.querySelector(".search-box input");
+const readButton = document.querySelector(".read-more-less button");
+const readDisplay = document.querySelector(".read-more-less p span");
+const readMoreDots = document.querySelector(".read-more-less p i");
 const carSliderImg = document.querySelector(".car-slider img");
 const faArrowLeft = document.querySelector(".fa-arrow-left");
 const faArrowRight = document.querySelector(".fa-arrow-right");
 
 searchBoxIcon.addEventListener("click", () => {
   searchBoxInput.classList.toggle("active");
+});
+
+readButton.addEventListener("click", () => {
+  readButton.innerText == "Read More ⯆"
+    ? (readButton.innerText = "Read Less ⯅")
+    : (readButton.innerText = "Read More ⯆");
+  readMoreDots.classList.toggle("active");
+  readDisplay.classList.toggle("active");
 });
 
 let i = 0;
