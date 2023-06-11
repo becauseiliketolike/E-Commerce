@@ -182,20 +182,20 @@ nav li:hover {
   animation: hot-deal-animation 1s steps(5, start) infinite;
 }
 
-.read-more-less p span {
-  display: none;
-}
-
-.read-more-less p span.active {
-  display: inline;
-}
-
 .read-more-less p i {
   display: inline;
 }
 
 .read-more-less p i.active {
   display: none;
+}
+
+.read-more-less p span {
+  display: none;
+}
+
+.read-more-less p span.active {
+  display: inline;
 }
 
 .read-more-less button {
