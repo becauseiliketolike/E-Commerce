@@ -1,6 +1,6 @@
 const searchBoxIcon = document.querySelector(".search-icon");
 const searchBoxInput = document.querySelector(".search-box input");
-const carSliderImg = document.querySelector(".car-slider img");
+const carSliderImg = document.querySelector(".img-slider img");
 const faArrowLeft = document.querySelector(".fa-arrow-left");
 const faArrowRight = document.querySelector(".fa-arrow-right");
 

@@ -174,13 +174,13 @@ main {
   justify-content: center;
 }
 
-.car-slider {
+.img-slider {
   width: 100%;
   height: 50%;
   position: relative;
 }
 
-.car-slider img {
+.img-slider img {
   width: 100%;
   height: 100%;
   object-fit: cover;
