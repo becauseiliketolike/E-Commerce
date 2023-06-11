@@ -3,7 +3,7 @@ const searchBoxInput = document.querySelector(".search-box input");
 const readButton = document.querySelector(".read-more-less button");
 const readDisplay = document.querySelector(".read-more-less p span");
 const readMoreDots = document.querySelector(".read-more-less p i");
-const carSliderImg = document.querySelector(".car-slider img");
+const carSliderImg = document.querySelector(".img-slider img");
 const faArrowLeft = document.querySelector(".fa-arrow-left");
 const faArrowRight = document.querySelector(".fa-arrow-right");
 
