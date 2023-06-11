@@ -1,6 +1,6 @@
 const searchBoxIcon = document.querySelector(".search-icon");
 const searchBoxInput = document.querySelector(".search-box input");
-const carSliderImg = document.querySelector(".img-slider img");
+const imgSlider = document.querySelector(".img-slider img");
 const faArrowLeft = document.querySelector(".fa-arrow-left");
 const faArrowRight = document.querySelector(".fa-arrow-right");
 
@@ -21,8 +21,8 @@ const startInterval = () => {
 };
 
 const updateSlider = (x) => {
-  carSliderImg.src = `./images/slide-${x % sliderImageLength}.jpg`;
-  carSliderImg.alt = `Image ${x % sliderImageLength}`;
+  imgSlider.src = `./images/slide-${x % sliderImageLength}.jpg`;
+  imgSlider.alt = `Image ${x % sliderImageLength}`;
   clearInterval(sliderInterval);
   startInterval();
 };
