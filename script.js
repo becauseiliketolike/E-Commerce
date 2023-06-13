@@ -32,7 +32,7 @@ const startInterval = () => {
 };
 
 const updateSlider = (x) => {
-  imgSlider.src = `./images/slide-${x % sliderImageLength}.jpg`;
+  imgSlider.src = `./images/slider/slide-${x % sliderImageLength}.jpg`;
   imgSlider.alt = `Image ${x % sliderImageLength}`;
   clearInterval(sliderInterval);
   startInterval();
@@ -49,3 +49,9 @@ faArrowRight.addEventListener("click", () => {
 });
 
 startInterval();
+
+async function getProducts() {
+  const response = await fetch("./api.js");
+  console.log(response.json());
+}
+getProducts();
