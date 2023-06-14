@@ -261,6 +261,9 @@ main {
   align-items: center;
 }
 
+.products {
+}
+
 footer {
   min-height: 10vh;
   background: var(--primary-color);

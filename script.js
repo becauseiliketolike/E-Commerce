@@ -1,3 +1,5 @@
+import { data } from "./data.js";
+
 const searchBoxIcon = document.querySelector(".search-icon");
 const searchBoxInput = document.querySelector(".search-box input");
 const readButton = document.querySelector(".read-more-less button");
@@ -6,6 +8,7 @@ const readMoreDots = document.querySelector(".read-more-less p i");
 const imgSlider = document.querySelector(".img-slider img");
 const faArrowLeft = document.querySelector(".fa-arrow-left");
 const faArrowRight = document.querySelector(".fa-arrow-right");
+const products = document.querySelector(".products");
 
 searchBoxIcon.addEventListener("click", () => {
   searchBoxInput.classList.toggle("active");
@@ -49,9 +52,3 @@ faArrowRight.addEventListener("click", () => {
 });
 
 startInterval();
-
-async function getProducts() {
-  const response = await fetch("./api.js");
-  console.log(response.json());
-}
-getProducts();
