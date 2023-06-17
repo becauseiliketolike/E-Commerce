@@ -1,5 +1,8 @@
 import { data } from "./data.js";
 
+const datas = Array.from(data());
+console.log(datas);
+
 const searchBoxIcon = document.querySelector(".search-icon");
 const searchBoxInput = document.querySelector(".search-box input");
 const readButton = document.querySelector(".read-more-less button");
@@ -52,3 +55,22 @@ faArrowRight.addEventListener("click", () => {
 });
 
 startInterval();
+
+datas.forEach((d) => {
+  const product = document.createElement("div");
+  product.classList.add("product");
+  const img = document.createElement("img");
+  img.src = d.image;
+  img.alt = d.title;
+  const description = document.createElement("div");
+  description.classList.add("description");
+  const pTitle = document.createElement("p");
+  pTitle.innerText = d.title;
+  const pPrice = document.createElement("p");
+  pPrice.innerText = d.price;
+  description.appendChild(pTitle);
+  description.appendChild(pPrice);
+  product.appendChild(img);
+  product.appendChild(description);
+  products.appendChild(product);
+});
