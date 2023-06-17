@@ -1,8 +1,6 @@
 import { data } from "./data.js";
 
 const datas = Array.from(data());
-console.log(datas);
-
 const searchBoxIcon = document.querySelector(".search-icon");
 const searchBoxInput = document.querySelector(".search-box input");
 const readButton = document.querySelector(".read-more-less button");
