@@ -58,7 +58,7 @@ datas.forEach((d) => {
   const product = document.createElement("div");
   product.classList.add("product");
   const img = document.createElement("img");
-  img.src = d.image;
+  img.src = `./images/products/product-${d.id}.jpg`;
   img.alt = d.title;
   const description = document.createElement("div");
   description.classList.add("description");
