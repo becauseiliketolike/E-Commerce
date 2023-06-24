@@ -284,18 +284,11 @@ main h2 {
 
 .product:hover {
   filter: drop-shadow(5px 12px 10px var(--secondary-color));
-  transform: scale(1.2);
-  background: var(--secondary-color);
 }
 
 .product img {
   width: 100%;
   object-fit: cover;
-  transition: all 0.3s ease-in-out;
-}
-
-.product img:hover {
-  transform: scale(1.2);
 }
 
 .description {
