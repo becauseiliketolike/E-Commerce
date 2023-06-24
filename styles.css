@@ -14,6 +14,11 @@
   font-weight: 500;
 }
 
+button {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+}
+
 header {
   min-height: 10vh;
   background: var(--primary-color);
@@ -296,6 +301,40 @@ main h2 {
   display: flex;
   justify-content: space-around;
   margin: 0.5rem 0rem;
+}
+
+.ctas {
+  display: flex;
+  justify-content: space-around;
+  padding: 0rem 2rem 1rem;
+}
+
+.ctas button {
+  padding: 0.5rem;
+  background: none;
+  width: 6rem;
+  color: var(--tertiary-color);
+}
+
+.ctas button:hover {
+  cursor: pointer;
+}
+
+.cta-1 {
+  border: 1px solid var(--tertiary-color);
+}
+
+.cta-1:hover {
+  background-color: var(--tertiary-color);
+  color: var(--secondary-color);
+}
+
+.cta-2 {
+  border: 1px solid black;
+}
+
+.cta-2:hover {
+  background-color: #000;
 }
 
 footer {
