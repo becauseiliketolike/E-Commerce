@@ -284,6 +284,7 @@ main h2 {
 
 .product:hover {
   filter: drop-shadow(5px 12px 10px var(--secondary-color));
+  transform: scale(1.2);
 }
 
 .product img {
