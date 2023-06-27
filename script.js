@@ -55,8 +55,9 @@ faArrowRight.addEventListener("click", () => {
 startInterval();
 
 datas.forEach((d) => {
-  const product = document.createElement("div");
+  const product = document.createElement("a");
   product.classList.add("product");
+  product.href = `./details/${d.id}.html`;
   const img = document.createElement("img");
   img.src = `./images/products/product-${d.id}.jpg`;
   img.alt = d.title;

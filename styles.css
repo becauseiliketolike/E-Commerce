@@ -285,6 +285,7 @@ main h2 {
   border-radius: 2rem;
   overflow: hidden;
   margin: 1rem 2rem 1rem 0rem;
+  text-decoration: none;
 }
 
 .product:hover {
@@ -335,6 +336,27 @@ main h2 {
 
 .cta-2:hover {
   background-color: #000;
+}
+
+.product-display {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 80vw;
+  margin: auto;
+}
+
+.product-page {
+  display: flex;
+  justify-content: space-between;
+}
+
+.product-image {
+  flex: 1 1 40rem;
+}
+
+.product-image img {
+  width: 25rem;
 }
 
 footer {
