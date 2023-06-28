@@ -53,11 +53,11 @@ faArrowRight.addEventListener("click", () => {
 });
 
 startInterval();
-
 datas.forEach((d) => {
   const product = document.createElement("a");
   product.classList.add("product");
-  product.href = `./details/${d.id}.html`;
+  product.setAttribute("id", d.id);
+  product.href = `./details/detail.html`;
   const img = document.createElement("img");
   img.src = `./images/products/product-${d.id}.jpg`;
   img.alt = d.title;
@@ -83,4 +83,14 @@ datas.forEach((d) => {
   product.appendChild(description);
   product.appendChild(ctas);
   products.appendChild(product);
+});
+
+const prods = document.querySelectorAll(".product");
+let id;
+
+prods.forEach((product) => {
+  console.log(product);
+  product.addEventListener("click", () => {
+    id = product.getAttribute("id");
+  });
 });

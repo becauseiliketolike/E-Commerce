@@ -1,7 +1,7 @@
 import { data } from "../data.js";
+import { id } from "../script.js";
 
 const datas = Array.from(data());
-const id = location.href.split("/").pop().split(".")[0];
 const d = datas.filter((data) => data.id == id);
 
 const main = document.querySelector("main");
@@ -31,9 +31,9 @@ ctas.classList.add("ctas");
 const cta1 = document.createElement("button");
 const cta2 = document.createElement("button");
 cta1.classList.add("cta-1");
-cta1.innerText = "Add to Cart";
+cta1.innerText = "Buy Now";
 cta2.classList.add("cta-2");
-cta2.innerText = "Browse";
+cta2.innerText = "Add to Cart";
 ctas.appendChild(cta1);
 ctas.appendChild(cta2);
 productDetails.appendChild(productName);
