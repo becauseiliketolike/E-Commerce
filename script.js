@@ -57,7 +57,7 @@ datas.forEach((d) => {
   const product = document.createElement("a");
   product.classList.add("product");
   product.setAttribute("id", d.id);
-  product.href = `./details/detail.html`;
+  product.href = `./details/details.html`;
   const img = document.createElement("img");
   img.src = `./images/products/product-${d.id}.jpg`;
   img.alt = d.title;
@@ -85,12 +85,10 @@ datas.forEach((d) => {
   products.appendChild(product);
 });
 
-const prods = document.querySelectorAll(".product");
 let id;
 
-prods.forEach((product) => {
-  console.log(product);
-  product.addEventListener("click", () => {
-    id = product.getAttribute("id");
-  });
+products.addEventListener("click", (e) => {
+  id = e.target.parentNode.getAttribute("id");
 });
+
+export { id };

@@ -1,6 +1,7 @@
 import { data } from "../data.js";
 import { id } from "../script.js";
 
+console.log(id);
 const datas = Array.from(data());
 const d = datas.filter((data) => data.id == id);
 
