@@ -10,6 +10,10 @@ const imgSlider = document.querySelector(".img-slider img");
 const faArrowLeft = document.querySelector(".fa-arrow-left");
 const faArrowRight = document.querySelector(".fa-arrow-right");
 const products = document.querySelector(".products");
+const main = document.querySelector("main");
+const login = document.querySelector(".login");
+const loginDiv = document.querySelector(".login-div");
+const loginCancel = document.querySelector(".login-cancel");
 
 searchBoxIcon.addEventListener("click", () => {
   searchBoxInput.classList.toggle("active");
@@ -88,4 +92,14 @@ datas.forEach((d) => {
 
 products.addEventListener("click", (e) => {
   localStorage.setItem("clicked", e.target.parentNode.getAttribute("id"));
+});
+
+login.addEventListener("click", () => {
+  loginDiv.classList.add("active");
+  main.style.opacity = "0.5";
+});
+
+loginCancel.addEventListener("click", () => {
+  loginDiv.classList.remove("active");
+  main.style.opacity = "1";
 });
