@@ -53,6 +53,7 @@ faArrowRight.addEventListener("click", () => {
 });
 
 startInterval();
+
 datas.forEach((d) => {
   const product = document.createElement("a");
   product.classList.add("product");
@@ -85,10 +86,6 @@ datas.forEach((d) => {
   products.appendChild(product);
 });
 
-let id;
-
 products.addEventListener("click", (e) => {
-  id = e.target.parentNode.getAttribute("id");
+  localStorage.setItem("clicked", e.target.parentNode.getAttribute("id"));
 });
-
-export { id };
