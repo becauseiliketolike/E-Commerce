@@ -11,12 +11,22 @@ const faArrowLeft = document.querySelector(".fa-arrow-left");
 const faArrowRight = document.querySelector(".fa-arrow-right");
 const products = document.querySelector(".products");
 const main = document.querySelector("main");
-const login = document.querySelector(".login");
-const loginDiv = document.querySelector(".login-div");
-const loginCancel = document.querySelector(".login-cancel");
+const signUp = document.querySelector(".sign-up");
+const signUpDiv = document.querySelector(".sign-up-div");
+const signUpCancel = document.querySelector(".sign-up-cancel");
 
 searchBoxIcon.addEventListener("click", () => {
   searchBoxInput.classList.toggle("active");
+});
+
+signUp.addEventListener("click", () => {
+  signUpDiv.classList.add("active");
+  main.style.display = "none";
+});
+
+signUpCancel.addEventListener("click", () => {
+  signUpDiv.classList.remove("active");
+  main.style.display = "block";
 });
 
 readButton.addEventListener("click", () => {
@@ -92,14 +102,4 @@ datas.forEach((d) => {
 
 products.addEventListener("click", (e) => {
   localStorage.setItem("clicked", e.target.parentNode.getAttribute("id"));
-});
-
-login.addEventListener("click", () => {
-  loginDiv.classList.add("active");
-  main.style.opacity = "0.5";
-});
-
-loginCancel.addEventListener("click", () => {
-  loginDiv.classList.remove("active");
-  main.style.opacity = "1";
 });

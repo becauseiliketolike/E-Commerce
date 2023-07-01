@@ -63,6 +63,12 @@ header img {
   border-bottom: 0.2rem solid white;
 }
 
+.search-sign-up {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .search-box {
   display: flex;
   justify-content: flex-end;
@@ -102,6 +108,19 @@ header img {
   background-color: var(--fourth-color);
 }
 
+.sign-up {
+  width: 6rem;
+  padding: 0.5rem 1rem;
+  margin-left: 2rem;
+  border: none;
+  cursor: pointer;
+}
+
+.sign-up:hover {
+  background-color: var(--secondary-color);
+  color: white;
+}
+
 .container {
   display: grid;
   grid-template-columns: 20% auto;
@@ -114,50 +133,51 @@ aside {
   border-radius: 0px 0px 0px 50px;
 }
 
-.login-div {
-  width: 20vw;
-  height: 40vh;
+.sign-up-div {
+  width: 100vw;
+  height: 90vh;
   display: none;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
   background-color: #847c79;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  animation: animatezoom 0.6s;
   z-index: 9;
 }
 
-.login-div.active {
+.sign-up-div.active {
   display: flex;
 }
 
-.login-cancel {
+.sign-up-div h2 {
+  font-size: 3rem;
+}
+
+.sign-up-cancel {
   position: absolute;
   top: 3%;
   right: 5%;
   cursor: pointer;
 }
 
-.login-cancel:hover {
+.sign-up-cancel:hover {
   color: #00000090;
 }
 
-.login-div form {
+.sign-up-div form {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
 }
 
-.login-div input {
-  width: 15rem;
+.sign-up-div input {
+  width: 50rem;
   padding: 0.5rem 1rem;
-  font-size: 1rem;
+  font-size: 1.6rem;
   margin-bottom: 2rem;
 }
 
-.login-div button {
+.sign-up-div button {
   font-size: 1rem;
   padding: 0.5rem;
   background-color: var(--primary-color);
@@ -166,7 +186,7 @@ aside {
   cursor: pointer;
 }
 
-.login-div button:hover {
+.sign-up-div button:hover {
   background-color: #00000090;
 }
 
@@ -264,7 +284,7 @@ nav li:hover {
   border: none;
   padding: 0.8rem;
   cursor: pointer;
-  margin-top: 0.5rem;
+  margin: 1rem 0rem;
 }
 
 .read-more-less button:hover {
@@ -468,5 +488,14 @@ footer {
   to {
     visibility: hidden;
     color: red;
+  }
+}
+
+@keyframes animatezoom {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0%);
   }
 }

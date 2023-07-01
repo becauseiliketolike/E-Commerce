@@ -18,8 +18,8 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../styles.css" />
-    <script defer src="../script.js" type="module"></script>
     <script defer src="./details.js" type="module"></script>
+    <script defer src="../script.js" type="module"></script>
     <title>bashir | Premium Suits</title>
   </head>
   <body>
@@ -29,20 +29,23 @@
           <img src="../images/logo.png" alt="logo" />
         </a>
       </div>
-      <div class="search-bar-icons">
-        <div class="icons">
-          <i class="fa-brands fa-instagram"></i>
-          <i class="fa-brands fa-facebook"></i>
-          <i class="fa-brands fa-youtube"></i>
-          <i class="fa-brands fa-twitter"></i>
-          <i class="fa-brands fa-linkedin-in"></i>
-        </div>
-        <div class="search-box">
-          <input type="text" placeholder="Search..." />
-          <div class="search-icon">
-            <img src="../images/search-icon.png" alt="" />
+      <div class="search-sign-up">
+        <div class="search-bar-icons">
+          <div class="icons">
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-youtube"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-linkedin-in"></i>
+          </div>
+          <div class="search-box">
+            <input type="text" placeholder="Search..." />
+            <div class="search-icon">
+              <img src="../images/search-icon.png" alt="" />
+            </div>
           </div>
         </div>
+        <button class="sign-up">Sign Up</button>
       </div>
     </header>
     <div class="container">
@@ -59,7 +62,7 @@
           </li>
           <li>ABOUT US</li>
           <li>CONTACT US</li>
-          <li>HOT ACK</li>
+          <li class="fsda">HOT ACK</li>
           <div class="read-more-less">
             <h3>HOT Deals</h3>
             <p>
@@ -86,6 +89,21 @@
           </div>
         </nav>
       </aside>
+      <div class="sign-up-div">
+        <h2 class="sign-up-cancel">X</h2>
+        <h2>Create a new Account</h2>
+        <form action="#">
+          <label for="Username">Username</label>
+          <input type="text" />
+          <label for="Email">Email</label>
+          <input type="email" />
+          <label for="Password">Password</label>
+          <input type="password" />
+          <label for="Repassword">Re-enter password</label>
+          <input type="password" />
+          <button type="submit">Sign Up</button>
+        </form>
+      </div>
       <main></main>
       <footer></footer>
     </div>
